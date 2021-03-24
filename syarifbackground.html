@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>syarif soden</title>
+	<style type="text/css">
+		.container{
+			width: 500px;
+			margin: auto;
+			background: #F3F3F3;
+			box-shadow: 5px 5px 5px 5px #555;
+			text-align: center;
+		}
+		.container_2{
+			width: 60px;
+			margin: auto;
+		}
+		button{
+			margin: 10px 
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>syarif soden</h1>
+		<h3><u>projek merubah warna background dengan tombol</u></h3>
+		<button>ubah warna</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+        var btn = document.querySelector('button');
+
+        function random(number) {
+          return Math.floor(Math.random()*(number+1));
+        }
+
+        btn.onclick = function() {
+          var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+          document.body.style.backgroundColor = rndCol;
+        }
+    </script>
+</body>
+</html>
