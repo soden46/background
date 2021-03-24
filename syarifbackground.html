@@ -3,31 +3,42 @@
 <head>
 	<title>syarif soden</title>
 	<style type="text/css">
-		.container{
-			width: 500px;
-			margin: auto;
-			background: #F3F3F3;
-			box-shadow: 5px 5px 5px 5px #555;
-			text-align: center;
+	.container{
+	border:20px solid rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';;
+	width: 400px;
+	height: 200px;
+	background: rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -140px;
+	margin-left: -240px;
+	text-align: center;
+	padding:40px;
+	display: table;
+}
+.box{
+	background:rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	border:50px solid rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+}
+button{
+			margin: 10px; 
 		}
-		.container_2{
-			width: 60px;
-			margin: auto;
-		}
-		button{
-			margin: 10px 
-		}
-		
-	</style>
+		</style>
 </head>
 <body>
-	<div class="container">
+	
+  <div class="container">
+	<div class="box">
 		<h1>syarif soden</h1>
-		<h3><u>projek merubah warna background dengan tombol</u></h3>
-		<button>ubah warna</button>
-		</div>
+      <h2>projek merubah warna background dengan tombol</h2>
+    <button><center>Ubah Warna</center></button>
 	</div>
-	<script type="text/javascript">
+</div>
+<script type="text/javascript">
         var btn = document.querySelector('button');
 
         function random(number) {
